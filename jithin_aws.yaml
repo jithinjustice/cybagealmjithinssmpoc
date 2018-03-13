@@ -1,0 +1,23 @@
+﻿--- 
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "An AWS Serverless Specification template describing your function."
+Resources: 
+  SNSTopic1: 
+    Type: "AWS::SNS::Topic"
+  jithinaws: 
+    Properties: 
+      CodeUri: "s3://almrc/jithin_aws-3d50c3a8-ebdd-4207-ad2e-2a9b3852a871.zip"
+      Description: ""
+      Events: 
+        SNS1: 
+          Properties: 
+            Topic: 
+              Ref: SNSTopic1
+          Type: SNS
+      Handler: lambda_function.lambda_handler
+      MemorySize: 128
+      Role: "arn:aws:iam::543816070942:role/lambda_basic_execution"
+      Runtime: python3.6
+      Timeout: 3
+    Type: "AWS::Serverless::Function"
+Transform: "AWS::Serverless-2016-10-31"
