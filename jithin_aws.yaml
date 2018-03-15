@@ -13,6 +13,7 @@ Resources:
       CodeUri: "s3://almrc/jithin_aws-3d50c3a8-ebdd-4207-ad2e-2a9b3852a871.zip"
       Description: ""
       AutoPublishAlias: !Ref alias
+      AutoPublishAlias: !Ref version
       #Version: !Ref version
       Events: 
         SNS1: 
