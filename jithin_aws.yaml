@@ -1,6 +1,9 @@
 ﻿--- 
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "An AWS Serverless Specification template describing your function."
+Parameters:
+  alias :
+    Type : String
 Resources: 
   SNSTopic1: 
     Type: "AWS::SNS::Topic"
@@ -8,7 +11,7 @@ Resources:
     Properties: 
       CodeUri: "s3://almrc/jithin_aws-3d50c3a8-ebdd-4207-ad2e-2a9b3852a871.zip"
       Description: ""
-      AutoPublishAlias: live
+      AutoPublishAlias: !Ref alias
       Events: 
         SNS1: 
           Properties: 
