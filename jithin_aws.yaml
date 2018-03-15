@@ -1,4 +1,3 @@
-﻿--- 
 AWSTemplateFormatVersion: "2010-09-09"
 Description: "An AWS Serverless Specification template describing your function."
 Parameters:
