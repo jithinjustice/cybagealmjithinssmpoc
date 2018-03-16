@@ -3,7 +3,7 @@ Description: "An AWS Serverless Specification template describing your function.
 Parameters:
   BucketName:
         Type: String
-    CodeKey:
+  CodeKey:
         Type: String
   alias :
     Type : String
