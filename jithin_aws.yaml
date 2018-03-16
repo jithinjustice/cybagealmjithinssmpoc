@@ -17,8 +17,8 @@ Resources:
       #CodeUri: "s3://almrc/jithin_aws-3d50c3a8-ebdd-4207-ad2e-2a9b3852a871.zip"
       CodeUri:  # !Ref function allows you to fetch value 
                 # of parameters and other resources at runtime
-                Bucket: !Ref BucketName
-                Key: !Ref CodeKey
+        Bucket: !Ref BucketName
+        Key: !Ref CodeKey
       Description: ""
       AutoPublishAlias: !Ref alias
       #AutoPublishVersion: !Ref version
