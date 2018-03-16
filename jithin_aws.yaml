@@ -3,8 +3,8 @@ Description: "An AWS Serverless Specification template describing your function.
 Parameters:
   #alias :
     #Type : String
-  version :
-    Type : String
+  #version :
+    #Type : String
 Resources: 
   SNSTopic1: 
     Type: "AWS::SNS::Topic"
@@ -22,7 +22,7 @@ Resources:
           Type: SNS
       Handler: lambda_function.lambda_handler
       MemorySize: 128
-      Version: !Ref version
+      #Version: !Ref version
       Role: "arn:aws:iam::543816070942:role/lambda_basic_execution"
       Runtime: python3.6
       Timeout: 3
